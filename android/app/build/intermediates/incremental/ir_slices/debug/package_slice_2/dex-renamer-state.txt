@@ -1,0 +1,4 @@
+#Wed Dec 04 15:02:22 PKT 2019
+base.0=C\:\\jafeel\\Native project\\fanr-app\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\2
+path.0=classes.dex
+renamed.0=classes.dex

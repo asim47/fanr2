@@ -1,0 +1,10 @@
+#Wed Dec 04 15:02:16 PKT 2019
+path.2=classes3.dex
+path.1=classes2.dex
+path.0=classes.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+base.2=C\:\\jafeel\\Native project\\fanr-app\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\10
+base.1=C\:\\jafeel\\Native project\\fanr-app\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\10
+base.0=C\:\\jafeel\\Native project\\fanr-app\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\10

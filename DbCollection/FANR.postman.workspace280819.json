@@ -1,0 +1,1472 @@
+{
+	"info": {
+		"_postman_id": "0c5ee2fc-efc4-4ab0-876f-d47e6c450ad1",
+		"name": "FANR",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Inbox",
+			"item": [
+				{
+					"name": "Categories",
+					"item": [
+						{
+							"name": "ListAll",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"sessionKey\":\"6Rb5esvhuiW6ZWvkCFUmkUjxaFyS0prcnmDMgyCvmg6k5msw53h5ShN6TsYB9tuq06C4QIk1CVf\"}"
+								},
+								"url": {
+									"raw": "/cms/rest/inbox/category/list",
+									"protocol": "http",
+									"host": [
+										"microsystems",
+										"dynalias",
+										"com"
+									],
+									"port": "7005",
+									"path": [
+										"cms",
+										"rest",
+										"inbox",
+										"category",
+										"list"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetById",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"sessionKey\":\"6Rb5esvhuiW6ZWvkCFUmkUjxaFyS0prcnmDMgyCvmg6k5msw53h5ShN6TsYB9tuq06C4QIk1CVf\",\"id\":16}"
+								},
+								"url": {
+									"raw": "/cms/rest/inbox/category/getById",
+									"protocol": "http",
+									"host": [
+										"microsystems",
+										"dynalias",
+										"com"
+									],
+									"port": "7005",
+									"path": [
+										"cms",
+										"rest",
+										"inbox",
+										"category",
+										"getById"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetCategoryTasks",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"sessionKey\":\"6Rb5esvhuiW6ZWvkCFUmkUjxaFyS0prcnmDMgyCvmg6k5msw53h5ShN6TsYB9tuq06C4QIk1CVf\",\"id\":21,\"startRow\":1,\"endRow\":10}"
+								},
+								"url": {
+									"raw": "/cms/rest/inbox/category/getCategoryTasks",
+									"protocol": "http",
+									"host": [
+										"microsystems",
+										"dynalias",
+										"com"
+									],
+									"port": "7005",
+									"path": [
+										"cms",
+										"rest",
+										"inbox",
+										"category",
+										"getCategoryTasks"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"sessionKey\":\"6Rb5esvhuiW6ZWvkCFUmkUjxaFyS0prcnmDMgyCvmg6k5msw53h5ShN6TsYB9tuq06C4QIk1CVf\",\"id\":16,\"name\":\"Test - Updated\",\"description\":\" Description - Updated\"}"
+								},
+								"url": {
+									"raw": "/cms/rest/inbox/category/update",
+									"protocol": "http",
+									"host": [
+										"microsystems",
+										"dynalias",
+										"com"
+									],
+									"port": "7005",
+									"path": [
+										"cms",
+										"rest",
+										"inbox",
+										"category",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"sessionKey\":\"6Rb5esvhuiW6ZWvkCFUmkUjxaFyS0prcnmDMgyCvmg6k5msw53h5ShN6TsYB9tuq06C4QIk1CVf\",\"id\":16}"
+								},
+								"url": {
+									"raw": "/cms/rest/inbox/category/delete",
+									"protocol": "http",
+									"host": [
+										"microsystems",
+										"dynalias",
+										"com"
+									],
+									"port": "7005",
+									"path": [
+										"cms",
+										"rest",
+										"inbox",
+										"category",
+										"delete"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"sessionKey\":\"6Rb5esvhuiW6ZWvkCFUmkUjxaFyS0prcnmDMgyCvmg6k5msw53h5ShN6TsYB9tuq06C4QIk1CVf\",\"name\":\"New Test\",\"description\":\"New Description\"}"
+								},
+								"url": {
+									"raw": "/cms/rest/inbox/category/create",
+									"protocol": "http",
+									"host": [
+										"microsystems",
+										"dynalias",
+										"com"
+									],
+									"port": "7005",
+									"path": [
+										"cms",
+										"rest",
+										"inbox",
+										"category",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "MoveTasks",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"sessionKey\":\"6Rb5esvhuiW6ZWvkCFUmkUjxaFyS0prcnmDMgyCvmg6k5msw53h5ShN6TsYB9tuq06C4QIk1CVf\",\"id\":21,\"taskIdList\":[552,551]}"
+								},
+								"url": {
+									"raw": "/cms/rest/inbox/category/moveTasks",
+									"protocol": "http",
+									"host": [
+										"microsystems",
+										"dynalias",
+										"com"
+									],
+									"port": "7005",
+									"path": [
+										"cms",
+										"rest",
+										"inbox",
+										"category",
+										"moveTasks"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "ClaimedTasks",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"sessionKey\":\"6Rb5esvhuiW6ZWvkCFUmkUjxaFyS0prcnmDMgyCvmg6k5msw53h5ShN6TsYB9tuq06C4QIk1CVf\",\"startRow\":0,\"endRow\":100}"
+						},
+						"url": {
+							"raw": "/cms/rest/inbox/claimedTasks",
+							"protocol": "http",
+							"host": [
+								"microsystems",
+								"dynalias",
+								"com"
+							],
+							"port": "7005",
+							"path": [
+								"cms",
+								"rest",
+								"inbox",
+								"claimedTasks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EmployeeTasks",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"sessionKey\":\"6Rb5esvhuiW6ZWvkCFUmkUjxaFyS0prcnmDMgyCvmg6k5msw53h5ShN6TsYB9tuq06C4QIk1CVf\",\"startRow\":0,\"endRow\":100}"
+						},
+						"url": {
+							"raw": "/cms/rest/inbox/employeeTasks",
+							"protocol": "http",
+							"host": [
+								"microsystems",
+								"dynalias",
+								"com"
+							],
+							"port": "7005",
+							"path": [
+								"cms",
+								"rest",
+								"inbox",
+								"employeeTasks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "InitiatedTasks",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"sessionKey\":\"6Rb5esvhuiW6ZWvkCFUmkUjxaFyS0prcnmDMgyCvmg6k5msw53h5ShN6TsYB9tuq06C4QIk1CVf\",\"startRow\":0,\"endRow\":100}"
+						},
+						"url": {
+							"raw": "/cms/rest/inbox/initiatedTasks",
+							"protocol": "http",
+							"host": [
+								"microsystems",
+								"dynalias",
+								"com"
+							],
+							"port": "7005",
+							"path": [
+								"cms",
+								"rest",
+								"inbox",
+								"initiatedTasks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OpenTasks",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"sessionKey\":\"6Rb5esvhuiW6ZWvkCFUmkUjxaFyS0prcnmDMgyCvmg6k5msw53h5ShN6TsYB9tuq06C4QIk1CVf\",\"startRow\":0,\"endRow\":100}"
+						},
+						"url": {
+							"raw": "/cms/rest/inbox/openedTasks",
+							"protocol": "http",
+							"host": [
+								"microsystems",
+								"dynalias",
+								"com"
+							],
+							"port": "7005",
+							"path": [
+								"cms",
+								"rest",
+								"inbox",
+								"openedTasks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ParticipatedTasks",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"sessionKey\":\"6Rb5esvhuiW6ZWvkCFUmkUjxaFyS0prcnmDMgyCvmg6k5msw53h5ShN6TsYB9tuq06C4QIk1CVf\",\"startRow\":0,\"endRow\":100}"
+						},
+						"url": {
+							"raw": "/cms/rest/inbox/participatedTasks",
+							"protocol": "http",
+							"host": [
+								"microsystems",
+								"dynalias",
+								"com"
+							],
+							"port": "7005",
+							"path": [
+								"cms",
+								"rest",
+								"inbox",
+								"participatedTasks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SavedTasks",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"sessionKey\":\"6Rb5esvhuiW6ZWvkCFUmkUjxaFyS0prcnmDMgyCvmg6k5msw53h5ShN6TsYB9tuq06C4QIk1CVf\",\"startRow\":0,\"endRow\":100}"
+						},
+						"url": {
+							"raw": "/cms/rest/inbox/savedTasks",
+							"protocol": "http",
+							"host": [
+								"microsystems",
+								"dynalias",
+								"com"
+							],
+							"port": "7005",
+							"path": [
+								"cms",
+								"rest",
+								"inbox",
+								"savedTasks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CompletedTasks",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"sessionKey\":\"6Rb5esvhuiW6ZWvkCFUmkUjxaFyS0prcnmDMgyCvmg6k5msw53h5ShN6TsYB9tuq06C4QIk1CVf\",\"startRow\":0,\"endRow\":100}"
+						},
+						"url": {
+							"raw": "/cms/rest/inbox/completedTasks",
+							"protocol": "http",
+							"host": [
+								"microsystems",
+								"dynalias",
+								"com"
+							],
+							"port": "7005",
+							"path": [
+								"cms",
+								"rest",
+								"inbox",
+								"completedTasks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "allTasks",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"sessionKey\":\"Ojr0IjBMYGIzQ07ixnNHFRsZDpm4zel5umouX4nfZH9VvNeB6T0ublyWNQEdc7trNopyEJd5vMV\",\"startRow\":0,\"endRow\":100}"
+						},
+						"url": {
+							"raw": "/cms/rest/inbox/allTasks",
+							"protocol": "http",
+							"host": [
+								"microsystems",
+								"dynalias",
+								"com"
+							],
+							"port": "7005",
+							"path": [
+								"cms",
+								"rest",
+								"inbox",
+								"allTasks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ApprovedStatistics",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"sessionKey\":\"6Rb5esvhuiW6ZWvkCFUmkUjxaFyS0prcnmDMgyCvmg6k5msw53h5ShN6TsYB9tuq06C4QIk1CVf\"}"
+						},
+						"url": {
+							"raw": "/cms/rest/inbox/approvedStatistics",
+							"protocol": "http",
+							"host": [
+								"microsystems",
+								"dynalias",
+								"com"
+							],
+							"port": "7005",
+							"path": [
+								"cms",
+								"rest",
+								"inbox",
+								"approvedStatistics"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreationStatistics",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"sessionKey\":\"6Rb5esvhuiW6ZWvkCFUmkUjxaFyS0prcnmDMgyCvmg6k5msw53h5ShN6TsYB9tuq06C4QIk1CVf\"}"
+						},
+						"url": {
+							"raw": "/cms/rest/inbox/creationStatistics",
+							"protocol": "http",
+							"host": [
+								"microsystems",
+								"dynalias",
+								"com"
+							],
+							"port": "7005",
+							"path": [
+								"cms",
+								"rest",
+								"inbox",
+								"creationStatistics"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SearchTasks",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"sessionKey\":\"6Rb5esvhuiW6ZWvkCFUmkUjxaFyS0prcnmDMgyCvmg6k5msw53h5ShN6TsYB9tuq06C4QIk1CVf\",\"title\":\"\",\"type\":\"\",\"reference\":\"\",\"initiatedDateFrom\":\"\",\"initiatedDateTo\":\"\",\"startRow\":0,\"endRow\":100}"
+						},
+						"url": {
+							"raw": "/cms/rest/inbox/search/getResults",
+							"protocol": "http",
+							"host": [
+								"microsystems",
+								"dynalias",
+								"com"
+							],
+							"port": "7005",
+							"path": [
+								"cms",
+								"rest",
+								"inbox",
+								"search",
+								"getResults"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Task",
+			"item": [
+				{
+					"name": "TaskDetailById",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"sessionKey\":\"gnDpu3QLp5TdxvagnL15L4l284n61El1QbQZ6nulgQOSB2uW1VNcFdRhyaZ2eldr6CposTTgLqN\",\"id\":562,\"type\":2}"
+						},
+						"url": {
+							"raw": "/cms/rest/task/getTaskDetailById",
+							"protocol": "http",
+							"host": [
+								"microsystems",
+								"dynalias",
+								"com"
+							],
+							"port": "7005",
+							"path": [
+								"cms",
+								"rest",
+								"task",
+								"getTaskDetailById"
+							]
+						},
+						"description": "Get all task details by id"
+					},
+					"response": []
+				},
+				{
+					"name": "TakeAction",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"sessionKey\":\"6Rb5esvhuiW6ZWvkCFUmkUjxaFyS0prcnmDMgyCvmg6k5msw53h5ShN6TsYB9tuq06C4QIk1CVf\",\"id\":559,\"type\":2,\"actionId\":8}"
+						},
+						"url": {
+							"raw": "/cms/rest/task/takeAction",
+							"protocol": "http",
+							"host": [
+								"microsystems",
+								"dynalias",
+								"com"
+							],
+							"port": "7005",
+							"path": [
+								"cms",
+								"rest",
+								"task",
+								"takeAction"
+							]
+						},
+						"description": "Get all task details by id"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"user\":\"imtiaz\",\"password\":\"Micro123\"}"
+				},
+				"url": {
+					"raw": "/cms/rest/auth/login",
+					"protocol": "http",
+					"host": [
+						"microsystems",
+						"dynalias",
+						"com"
+					],
+					"port": "7005",
+					"path": [
+						"cms",
+						"rest",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"sessionKey\":\"aCfdpfwOts9EStjTuVGMla2OVd8QzVIndhYElVdA8KXCSvqaM56HhpBFNf5zyIMoJjuOVhgvxxr\"}"
+				},
+				"url": {
+					"raw": "/cms/rest/auth/logout",
+					"protocol": "http",
+					"host": [
+						"microsystems",
+						"dynalias",
+						"com"
+					],
+					"port": "7005",
+					"path": [
+						"cms",
+						"rest",
+						"auth",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetUserDetails",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"sessionKey\":\"6Rb5esvhuiW6ZWvkCFUmkUjxaFyS0prcnmDMgyCvmg6k5msw53h5ShN6TsYB9tuq06C4QIk1CVf\"}"
+				},
+				"url": {
+					"raw": "/cms/rest/auth/getUserDetails",
+					"protocol": "http",
+					"host": [
+						"microsystems",
+						"dynalias",
+						"com"
+					],
+					"port": "7005",
+					"path": [
+						"cms",
+						"rest",
+						"auth",
+						"getUserDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SaveNotification",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"sessionKey\":\"o26P9uv2OosV3hDBvvJfybz3PYGKcHAuCEhIpqfRl5Rp7GGhEI9a6S9yE6foJb82UO5rIGifdCy\",\"actionId\":8,\"transactionId\":559}"
+				},
+				"url": {
+					"raw": "/cms/rest/notification/saveNotification",
+					"protocol": "http",
+					"host": [
+						"microsystems",
+						"dynalias",
+						"com"
+					],
+					"port": "7005",
+					"path": [
+						"cms",
+						"rest",
+						"notification",
+						"saveNotification"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SendNotification",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"sessionKey\":\"iCpZ3FHenhnTWvewS9mDtihXdMQPIjk13LB7ViqJ24lz5TvUEQBlkKN4tMYrRX6MrmigTQXj1V7\"}"
+				},
+				"url": {
+					"raw": "/cms/rest/notification/sendNotification",
+					"protocol": "http",
+					"host": [
+						"microsystems",
+						"dynalias",
+						"com"
+					],
+					"port": "7005",
+					"path": [
+						"cms",
+						"rest",
+						"notification",
+						"sendNotification"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllDepartments",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"sessionKey\":\"iMnGMl8cEjhwVDAKXEh2Rz26ukibKUHkFKOrCQ15h3hDwj6TGbgDyjezP8rwiYsUCLi2p6LkMqH\"}"
+				},
+				"url": {
+					"raw": "/cms/rest/department/getAllDepartments",
+					"protocol": "http",
+					"host": [
+						"microsystems",
+						"dynalias",
+						"com"
+					],
+					"port": "7005",
+					"path": [
+						"cms",
+						"rest",
+						"department",
+						"getAllDepartments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SyncEmails",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"sessionKey\":\"3UQSRnjBaEWvf7D7y0TuXwyYZc5K68wq5QFWeRaB0bwQo0fqPRUlOpoiP54qFLM763trzxhW2eL\"}"
+				},
+				"url": {
+					"raw": "/cms/rest/mail/syncEmails",
+					"protocol": "http",
+					"host": [
+						"microsystems",
+						"dynalias",
+						"com"
+					],
+					"port": "7005",
+					"path": [
+						"cms",
+						"rest",
+						"mail",
+						"syncEmails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetUserEmails",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"sessionKey\":\"TnbWJko2nsbLcECIETge7b3krzzrh3iJXfLrcQui2XdEJiX8ypFMGdpUyiRgvic0Y2SRpjLZlJC\"}"
+				},
+				"url": {
+					"raw": "/cms/rest/mail/getUserEmails",
+					"protocol": "http",
+					"host": [
+						"microsystems",
+						"dynalias",
+						"com"
+					],
+					"port": "7005",
+					"path": [
+						"cms",
+						"rest",
+						"mail",
+						"getUserEmails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SearchDocuments",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"sessionKey\":\"e7N0oRVhStAR0jgsJgYMeiyN2wqMnlaQJ6yt4INBZU90zwofo45dWQQgVRZ8aqzYdIL9HoC8XMw\",\"author\":\"ahmed\",\"docTitle\":\"MDS-BlueCoat\",\"docName\":\"CIN_000098587\",\"documentType\":\"ICT\",\"fromDate\":\"01/01/2010\",\"toDate\":\"01/01/2020\",\"securityGroup\":\"Public\",\"securityAccount\":\"DG/ADM/ICT\"}"
+				},
+				"url": {
+					"raw": "/cms/rest/edms/searchDocuments",
+					"protocol": "http",
+					"host": [
+						"microsystems",
+						"dynalias",
+						"com"
+					],
+					"port": "7005",
+					"path": [
+						"cms",
+						"rest",
+						"edms",
+						"searchDocuments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSecurityGroups",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"sessionKey\":\"cyOVIKon64uMXUXzjTqvCiOSMxfz8exedJdjDWQxerlAt1xbhAJEOMo5k28kS7zycoU59w2Kr9H\"}"
+				},
+				"url": {
+					"raw": "/cms/rest/edms/getSecurityGroups",
+					"protocol": "http",
+					"host": [
+						"microsystems",
+						"dynalias",
+						"com"
+					],
+					"port": "7005",
+					"path": [
+						"cms",
+						"rest",
+						"edms",
+						"getSecurityGroups"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSecurityAccounts",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"sessionKey\":\"HdctdjZRo5ZDbNbPSBGVOk3tKjda5FGTZT4r8wPqU7MsDyK9nY8jaz86wTb1Pi5MMINUEbBoYD3\"}"
+				},
+				"url": {
+					"raw": "/cms/rest/edms/getSecurityAccounts",
+					"protocol": "http",
+					"host": [
+						"microsystems",
+						"dynalias",
+						"com"
+					],
+					"port": "7005",
+					"path": [
+						"cms",
+						"rest",
+						"edms",
+						"getSecurityAccounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetWFTypes",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"sessionKey\":\"jY69tB78nnE0d36Rg6fzy0T2cpLXCL1ejQFshyH0rKBt7ufMmBrA5SLLsiF9Ohk4y6bSAlIOLTb\"}"
+				},
+				"url": {
+					"raw": "/cms/rest/inbox/search/getWFTypes",
+					"protocol": "http",
+					"host": [
+						"microsystems",
+						"dynalias",
+						"com"
+					],
+					"port": "7005",
+					"path": [
+						"cms",
+						"rest",
+						"inbox",
+						"search",
+						"getWFTypes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetTreeData",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"sessionKey\":\"IWF26TFfEqOV66buJRIVw9ADw3nTfYXHgHTcSV7rWwePyxGQRHu07Ep4LYLeGgeJPx6vg6Fz6jx\"}"
+				},
+				"url": {
+					"raw": "/cms/rest/tree/getTreeData",
+					"protocol": "http",
+					"host": [
+						"microsystems",
+						"dynalias",
+						"com"
+					],
+					"port": "7005",
+					"path": [
+						"cms",
+						"rest",
+						"tree",
+						"getTreeData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllActions",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"sessionKey\":\"yik18w31T7XyGuVpJtzPSHMIXPZoQAwwoag2D7jSRR04DubiX6dEFalgOG6VtSRrc9lcHZYkvLP\"}"
+				},
+				"url": {
+					"raw": "/cms/rest/action/getAllActions",
+					"protocol": "http",
+					"host": [
+						"microsystems",
+						"dynalias",
+						"com"
+					],
+					"port": "7005",
+					"path": [
+						"cms",
+						"rest",
+						"action",
+						"getAllActions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetTaskActions",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"sessionKey\":\"xq7e4VTtbhQ7yUQVhWqRafSs5Zvkl6rytzpP8m7vuosjxG2wlTR5rSkl1pdUE1pSdXEZQ7RPJ7t\",\"id\":559,\"type\":2}"
+				},
+				"url": {
+					"raw": "/cms/rest/task/getTaskActions",
+					"protocol": "http",
+					"host": [
+						"microsystems",
+						"dynalias",
+						"com"
+					],
+					"port": "7005",
+					"path": [
+						"cms",
+						"rest",
+						"task",
+						"getAllActions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetProcessApprovalData",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"sessionKey\":\"vEMYfbmafygrhnzfW9OWfElsdJq4YpKSFTPyB7nDk8cuEhF2YC6HosYiOmqC9dRUF2ajJi0PSX9\",\"trxId\":587}"
+				},
+				"url": {
+					"raw": "/cms/rest/procapproval/getCommitteeRecords",
+					"protocol": "http",
+					"host": [
+						"microsystems",
+						"dynalias",
+						"com"
+					],
+					"port": "7005",
+					"path": [
+						"cms",
+						"rest",
+						"procapproval",
+						"getCommitteeRecords"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetProcurementMomlData",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"sessionKey\":\"bQrHMCT3pmLfyQ4q5cnGmSGLKREt6TVRHCxOcJrXg6VPA0frgaMyKvDVLpqY2yrJLzWa1Wl93Gv\",\"trxId\":619}"
+				},
+				"url": {
+					"raw": "/cms/rest/pmom/getCommitteeRecords",
+					"protocol": "http",
+					"host": [
+						"microsystems",
+						"dynalias",
+						"com"
+					],
+					"port": "7005",
+					"path": [
+						"cms",
+						"rest",
+						"pmom",
+						"getCommitteeRecords"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCorrTemplate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"sessionKey\":\"bQrHMCT3pmLfyQ4q5cnGmSGLKREt6TVRHCxOcJrXg6VPA0frgaMyKvDVLpqY2yrJLzWa1Wl93Gv\",\"trxId\":543}"
+				},
+				"url": {
+					"raw": "/cms/rest/correspondence/template/getCorrTemplate",
+					"protocol": "http",
+					"host": [
+						"microsystems",
+						"dynalias",
+						"com"
+					],
+					"port": "7005",
+					"path": [
+						"cms",
+						"rest",
+						"correspondence",
+						"template",
+						"getCorrTemplate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetTaskAttachments",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"sessionKey\":\"mYsJsxIK5ZyOBx419EDMn5f3XSVR48bHpd1EshkQ7l0avEKjQJgOm5KGdSrcUIgbewzLs9UpVCA\",\"taskId\":558}"
+				},
+				"url": {
+					"raw": "/cms/rest/task/getTaskAttachments",
+					"protocol": "http",
+					"host": [
+						"microsystems",
+						"dynalias",
+						"com"
+					],
+					"port": "7005",
+					"path": [
+						"cms",
+						"rest",
+						"task",
+						"getTaskAttachments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSubTasks",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"sessionKey\":\"kO5M8YPli49rwpofBa2QdpSiLmnCVL9ab592AaNXfwrvvVUddcKMV34LzOaV7yGKpFDq4d2m5YL\",\"id\":524}"
+				},
+				"url": {
+					"raw": "/cms/rest/task/getSubTasks",
+					"protocol": "http",
+					"host": [
+						"microsystems",
+						"dynalias",
+						"com"
+					],
+					"port": "7005",
+					"path": [
+						"cms",
+						"rest",
+						"task",
+						"getSubTasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetTaskHistory",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"sessionKey\":\"m7i2KURo6oIKVi8lBIhSQexJEqxIdONt0TJ78kiiJ0oeVMkU5XeRbjIOl4m3PjNFWrLXbvgQvox\",\"id\":561,\"actionId\":7}"
+				},
+				"url": {
+					"raw": "/cms/rest/task/getTaskHistory",
+					"protocol": "http",
+					"host": [
+						"microsystems",
+						"dynalias",
+						"com"
+					],
+					"port": "7005",
+					"path": [
+						"cms",
+						"rest",
+						"task",
+						"getTaskHistory"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
